@@ -14,7 +14,12 @@ class Car{
     //setter
     set setPrice(newPrice)
     {
-        this.price=newPrice;
+        if(newPrice>this.price)
+        {
+            this.price=newPrice
+        }
+        else
+            this.price;
     }
 }
 class RacingCar extends Car
@@ -25,5 +30,5 @@ class RacingCar extends Car
         this.maxspeed=maxspeed;
     }
 }
-const c1=new Car('BMW','black',9999999);
-const c2=new RacingCar('Ferrari','red','28738273',400);
+const c1=new Car('BMW','black',9999);
+const c2=new RacingCar('Ferrari','red',10000,400);
