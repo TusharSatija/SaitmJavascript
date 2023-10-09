@@ -15,10 +15,23 @@ function compressFile(path,compress)
         compress(comp);
     },2000);
 }
+
+function UploadFile(comp,upload)
+{
+    console.log('file start uploading ');
+    setTimeout(()=>{
+        const upl='http://LocalStorage'+comp;
+        upload(upl);
+    },2000);
+}
 DownloadFile('https://www.facebook.com/profile.jpg',function(path){
     console.log(`file downloaded successfully ${path}`);
     compressFile(path,function(comp){
         console.log(`file compressed successfully....${comp}`);
+            UploadFile(comp,function(upl){
+            console.log(`file upload Sucessfully..${upl}`)
+                console.log('Everthing is done !!')
+        })
     })
 })
 
