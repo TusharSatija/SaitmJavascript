@@ -1,0 +1,4 @@
+Assesment Day -- 
+problem statement
+1. js star Pattern  hollow square and traingle
+2. frequency of each word in a sentence
