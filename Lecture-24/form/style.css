@@ -1,0 +1,48 @@
+label{
+    display: block;
+    height: 3rem;
+    font-size: 2rem;
+}
+
+input{
+    font-size: 2rem;
+    height: 3rem;
+    border-radius: 12px;
+    width: 25rem;
+    /* margin-bottom: 20px; */
+}
+
+
+form{
+    border: 3px solid red;
+    width: 700px;
+    margin: 3px auto;
+    padding: 30px;
+    background-color: lightgray;
+    border-radius: 15px;
+}
+
+input[type="submit"]{
+    width: 9rem;
+    margin-right: 5rem;
+    background-color: black;
+    color: white;
+}
+input[type="reset"]{
+    width: 9rem;
+    background-color: black;
+    color: white;
+}
+div{
+    border: 3px solid red;
+    height: 3rem;
+}
+
+#rad{
+    display: inline-block;
+}
+
+span{
+color: red;
+font-size: 2rem;
+}
